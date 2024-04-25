@@ -15,14 +15,10 @@ import PopUpWrapper from '../PopUpWrapper/index'
 import Deposite from '../popup/DepositePopUp/index'
 import './index.css'
 import StatisticDropDownPopUp from '../popup/StatisticDropDownPopUp/index'
-import logo from '../../assets/logo.svg'
-import BetaLogo from '../../assets/icons/BetaLogo.svg'
-import miniBeta from '../../assets/icons/MiniBeta.svg'
 import ExtraDropDownPopUp from '../popup/ExtraDropDownPopUp/index'
 import StatisticIcon from '../../assets/statistic.svg'
 import CompanyIcon from '../../assets/company.svg'
 import SitesIcon from '../../assets/sites.svg'
-import logoLeftMenu from '../../assets/logo_w_leftMenu.svg'
 import {getBalanceAPI} from '../../api/data.api'
 import WithdrawPopUp from '../popup/WithdrawPopUp/index';
 
@@ -123,15 +119,15 @@ const LeftCompanyMenu: React.FC = () => {
 							location.pathname,
 						) ? (
 							<Link to={'/'} className={s.logoMini}>
-								<img src={logo} alt="Logo" />
-								<img className="w-[24px] h-[24px]" src={miniBeta} alt="B" />
+								{/* <img src={logo} alt="Logo" />
+								<img className="w-[24px] h-[24px]" src={miniBeta} alt="B" /> */}
 							</Link>
 						) : (
 							<>
 								<Link to={'/'} className={s.logoMini}>
-									<img src={logo} alt="Logo" />
+									{/* <img src={logo} alt="Logo" /> */}
 									{/* <img src={BetaLogo} alt="B" /> */}
-									<img className="w-[24px] h-[24px]" src={miniBeta} alt="B" />
+									{/* <img className="w-[24px] h-[24px]" src={miniBeta} alt="B" /> */}
 								</Link>
 							</>
 						)}
@@ -440,7 +436,7 @@ const LeftCompanyMenu: React.FC = () => {
 					{/* Footer */}
 					<Col className={s.wrapperRight} width="180px">
 						<div className={s.footerCompany}>
-							<img src={logoLeftMenu} alt="Invest" />
+							{/* <img src={logoLeftMenu} alt="Invest" /> */}
 							{/* <div className={s.footerAbout}>
 								<span className={s.footerAboutText}>
 									<a href="#!" className={s.footerTextLink}>

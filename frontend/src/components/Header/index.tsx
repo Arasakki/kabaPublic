@@ -3,8 +3,6 @@ import s from './index.module.scss'
 
 // svg import
 import AccountAvatar from '../AccountAvatar/index'
-import logo from '../../assets/logo.svg'
-import BetaLogo from '../../assets/icons/BetaLogo.svg'
 import {useDispatch, useSelector} from 'react-redux'
 import ProfilePopUp from '../popup/ProfilePopUp'
 import NotificationMenu from '../NotificationMenu/index'
@@ -402,8 +400,8 @@ const Header: React.FC = () => {
 			) : (
 				<div style={maxWidth} className={s.header}>
 					<div className={s.logo}>
-						<img src={logo} alt="logo" />
-						<img src={BetaLogo} alt="Beta" />
+						{/* <img src={logo} alt="logo" />
+						<img src={BetaLogo} alt="Beta" /> */}
 					</div>
 				</div>
 			)}
